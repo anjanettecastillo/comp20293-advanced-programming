@@ -1,0 +1,24 @@
+<!--ANJANETTE CASTILLO-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exercise 2 - Selecting Element by ID using jQuery</title>
+</head>
+<body>
+    <p id="first_sentence">This is a sentence.</p>
+    <p id="another_sentence">This is another sentence.</p>
+    <p>This is one more sentence.</p>
+    <p><strong>Note:</strong> The value of the id attribute must be unique in an HTML document.</p>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#first_sentence").css("background-color", "yellow");
+        });
+        $(document).ready(function(){
+            $("#another_sentence").css("background-color", "green");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--ANJANETTE CASTILLO-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 3 - Getting HTML Contents of an Element using jQuery</title>
+</head>
+<body>
+    <button type="button" class="btn-one">Show me Paragraph's HTML Contents</button>
+    <button type="button" class="btn-two">Show me Container's HTML Contents</button>
+    <div id="container">
+        <h1>Hello Advanced Programming!</h1>
+        <p>This is <b>exercise</b> three.</p>
+    </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $(".btn-one").click(function(){
+            var text = $("p").html();
+            alert(text);
+        });
+        $(".btn-two").click(function(){
+            var text = $("#container").html();
+            alert(text);
+        });
+      });
+    </script>
+</body>
+</html>
